@@ -53,3 +53,7 @@ new_value = 999
 # tuple 相加 = 合併
 t3 = t3[:index] + (new_value,) + t3[index+1:]
 print(t3)
+list_tmp = list(t3)
+list_tmp[1] = 20
+t3 = tuple(list_tmp)
+print(t3)
