@@ -58,3 +58,15 @@ list_tmp = list(t3)
 list_tmp[1] = 20
 t3 = tuple(list_tmp)
 print(t3)
+print("-"*30)
+
+# max 進階使用
+scores = (
+    {"id": 1, "name": "Joe", "score": 85},
+    {"id": 2, "name": "Allice", "score": 92},
+    {"id": 3, "name": "Ken", "score": 75},
+    {"id": 4, "name": "Ben", "score": 90},
+    {"id": 5, "name": "Karen", "score": 88},
+)
+no1 = max(scores, key=lambda score: score["score"])
+print(no1)
