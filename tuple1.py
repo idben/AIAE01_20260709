@@ -28,3 +28,19 @@ print(t1[1])
 # t1[1] = 2   # 會出錯, 不支援重新指定 tuple 內容
 t1[5][0] = 99
 print(t1, type(t1))
+print("-"*30)
+
+# 基本解包
+t2 = (10, 20, 30)
+# a = t2[0]
+# b = t2[1]
+# c = t2[2]
+a, b, c = t2
+print(f"a 是 {a}")
+print(f"b 是 {b}")
+print(f"c 是 {c}")
+
+# 星號解包
+a, *others = t2
+print(f"a 是 {a}")
+print(f"others 是 {others}")
