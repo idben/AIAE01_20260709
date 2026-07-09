@@ -22,3 +22,9 @@ print(c, type(c))
 # tuple 的內容可以混合型別
 t1 = (1, 1, "a", True, None, [1, 2, 3], (1, 2), {"id": 3, "name": "Ben"})
 print(t1, type(t1))
+
+# tuple 的不可變
+print(t1[1])
+# t1[1] = 2   # 會出錯, 不支援重新指定 tuple 內容
+t1[5][0] = 99
+print(t1, type(t1))
