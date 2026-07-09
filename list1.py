@@ -45,7 +45,7 @@ print(f"排序後的資料: {sorted(datas, key=lambda d: d["age"])}")
 print("-"*30)
 
 # sorted 實例 2
-
+# 在不改變原始名單的狀況下，取前三名
 scores = [
     {"id": 1, "name": "Joe", "score": 85},
     {"id": 2, "name": "Allice", "score": 92},
@@ -53,3 +53,4 @@ scores = [
     {"id": 4, "name": "Ben", "score": 90},
     {"id": 5, "name": "Karen", "score": 88},
 ]
+print(sorted(scores, key=lambda st: st["score"], reverse=True)[0:3])
