@@ -10,3 +10,11 @@ print(type(point2).__name__)
 empty = ()
 print(len(empty))
 print(type(empty))
+
+# 單一元素，要多一個半形逗點才能形成單一元素 tuple
+a = [3]
+b = (3)
+c = (3,)
+print(a, type(a))
+print(b, type(b))
+print(c, type(c))
