@@ -5,3 +5,8 @@ print(f"X 座標是: {point[0]}")
 
 point2 = 30, 40 # taple packing, 元祖打包, 重點是逗號
 print(type(point2).__name__)
+
+# 空 tuple
+empty = ()
+print(len(empty))
+print(type(empty))
