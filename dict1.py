@@ -50,3 +50,11 @@ except:
 print("a5", a5)
 v1 = d6.setdefault("k4", 666)
 print("v1", v1)
+
+# 更新多筆
+# 注意 .update() 有兩種使用方式, 一個是傳入一個 dict,
+# 一個是使用建構子方式更新
+d7 = {"k3": 3, "k4": 4}
+d6.update(d7)
+d6.update(k5=5, k6=6, k7=7)
+print("d6", d6)
