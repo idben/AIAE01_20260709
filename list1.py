@@ -58,7 +58,10 @@ print(sorted(scores, key=lambda st: st["score"], reverse=True)[0:3])
 
 # 方法 2
 # 搭配複製串列﹑反轉串列和切片取前三名
-scores_new = scores.copy()
+# scores_new = scores.copy()    # 串列複製 1
+# scores_new = scores[:]        # 串列複製 2
+# scores_new = list(scores)     # 串列複製 3
+scores_new = [*scores]          # 串列複製 4 星號展開
 scores_new.sort(key=lambda st: st["score"])
 scores_new.reverse()
 print(scores_new[0:3])
