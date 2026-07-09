@@ -54,3 +54,11 @@ scores = [
     {"id": 5, "name": "Karen", "score": 88},
 ]
 print(sorted(scores, key=lambda st: st["score"], reverse=True)[0:3])
+
+
+# 方法 2
+# 搭配複製串列﹑反轉串列和切片取前三名
+scores_new = scores.copy()
+scores_new.sort(key=lambda st: st["score"])
+scores_new.reverse()
+print(scores_new[0:3])
