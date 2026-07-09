@@ -20,3 +20,19 @@ list2[0][0] = 999
 print(list1)
 print(list2)
 print(list3)
+print("-"*30)
+
+# 深拷貝實例
+scores = [
+    {"id": 1, "name": "Joe", "score": 85},
+    {"id": 2, "name": "Allice", "score": 92},
+    {"id": 3, "name": "Ken", "score": 75},
+    {"id": 4, "name": "Ben", "score": 90},
+    {"id": 5, "name": "Karen", "score": 88},
+]
+# scores_new = scores.copy()
+scores_new = copy.deepcopy(scores)
+scores_new[4]["score"] = 100
+
+print(scores)
+print(scores_new)
