@@ -84,3 +84,25 @@ for k, v in d.items():
 # keys() / values()
 print(d.keys())
 print(d.values())
+
+# 合併與覆蓋
+a = {"x": 1, "y": 2}
+b = {"y": 99, "z": 3}
+a.update(b) # {'x': 1, 'y': 99, 'z': 3}
+print("a", a)
+
+
+# | 建立新字典, 相同 key 以右邊的值為主
+a = {"x": 1, "y": 2}
+b = {"y": 99, "z": 3}
+c1 = a|b
+c2 = b|a
+print("c1", c1)
+print("c2", c2)
+a |= b # 和 .update() 一樣
+print("a", a)
+
+a = {"x": 1, "y": 2}
+b = {"y": 99, "z": 3}
+c3 = {**a, **b} # 等同於 |=
+print("c3", c3)
