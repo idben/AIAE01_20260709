@@ -58,3 +58,19 @@ d7 = {"k3": 3, "k4": 4}
 d6.update(d7)
 d6.update(k5=5, k6=6, k7=7)
 print("d6", d6)
+print("-"*30)
+
+# 刪除
+del d6["k4"]
+print("d6", d6)
+# del d6["k14"]     # 刪除不存在的 key 會出錯
+v_del = d6.pop("k5")
+print("d6", d6)
+print("v_del", v_del)
+# d6.pop("k15")       # 刪除不存在的 key 會出錯
+v_del2 = d6.popitem() # .popitem() 刪除最後插入的一筆
+print("d6", d6)
+print("v_del2", v_del2)
+
+d6.clear()
+print("d6", d6)
