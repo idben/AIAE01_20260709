@@ -44,3 +44,12 @@ print(f"c 是 {c}")
 a, *others = t2
 print(f"a 是 {a}")
 print(f"others 是 {others}")
+print("-"*30)
+
+# 修改 tuple 的內容 = 以新 tuple 覆蓋
+t3 = (10, 20, 30, 40)
+index = 1
+new_value = 999
+# tuple 相加 = 合併
+t3 = t3[:index] + (new_value,) + t3[index+1:]
+print(t3)
