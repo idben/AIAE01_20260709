@@ -18,3 +18,7 @@ c = (3,)
 print(a, type(a))
 print(b, type(b))
 print(c, type(c))
+
+# tuple 的內容可以混合型別
+t1 = (1, 1, "a", True, None, [1, 2, 3], (1, 2), {"id": 3, "name": "Ben"})
+print(t1, type(t1))
