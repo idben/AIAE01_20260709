@@ -25,3 +25,31 @@ datas = [
 ]
 datas.sort(key=lambda data: data["age"], reverse=True)
 print(datas)
+print("-"*30)
+
+# sorted 不會改變原始對象, 會回傳新內容
+list1 = [3,1,10,2]
+print(sorted(list1))
+
+list2 = ["cc", "b", "aaa"]
+print(f"原始串列: {list2}")
+print(f"排序後的結果: {sorted(list2, key=len)}")
+
+datas = [
+    {"id": 1, "name": "Ben", "age": 38},
+    {"id": 2, "name": "May", "age": 18},
+    {"id": 3, "name": "John", "age": 28}
+]
+print(f"原始資料: {datas}")
+print(f"排序後的資料: {sorted(datas, key=lambda d: d["age"])}")
+print("-"*30)
+
+# sorted 實例 2
+
+scores = [
+    {"id": 1, "name": "Joe", "score": 85},
+    {"id": 2, "name": "Allice", "score": 92},
+    {"id": 3, "name": "Ken", "score": 75},
+    {"id": 4, "name": "Ben", "score": 90},
+    {"id": 5, "name": "Karen", "score": 88},
+]
