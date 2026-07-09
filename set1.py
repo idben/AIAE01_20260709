@@ -20,3 +20,21 @@ s3.add(5)
 # update(更新一組 list)
 s3.update([6, 7, 7])
 print("s3", s3)
+
+# 刪除
+s3.remove(4)
+print("s3", s3)
+# s3.remove(4) # 刪除不存在的元素, 會丟出錯誤
+
+# 集合運算
+users_a = {"Ben", "Amy", "Ken"}
+users_b = {"Ken", "Ivy", "Tom"}
+
+common = users_a & users_b
+only_a = users_a - users_b
+all = users_a | users_b
+diff = users_a ^ users_b
+print("common", common)
+print("only_a", only_a)
+print("all", all)
+print("diff", diff)
