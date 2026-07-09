@@ -74,3 +74,13 @@ print("v_del2", v_del2)
 
 d6.clear()
 print("d6", d6)
+print("-"*30)
+
+# 走訪(遍歷)
+d = {"name": "Ben", "age": 18, "city": "Taipei"}
+
+for k, v in d.items():
+    print(k, v)
+# keys() / values()
+print(d.keys())
+print(d.values())
