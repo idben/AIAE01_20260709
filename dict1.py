@@ -11,3 +11,21 @@ prices = {
 f = "banana"
 s = "small"
 print(prices[f, s])
+print("-"*30)
+
+# 字典的基本表現方式
+# 大括號字面值
+d3 = {"k1": 1, "k2": 2}
+d4 = dict(k1=1, k2=2) # 建構子
+print("d3", d3)
+print("d4", d4)
+
+pairs = [("k1", 1), ("k2", 2)]
+d5 = dict(pairs)
+print("d5", d5)
+
+keys = ["k1", "k2"]
+values = [1, 2]
+print(list(zip(keys, values)))
+d6 = dict(zip(keys, values))
+print("d6", d6)
